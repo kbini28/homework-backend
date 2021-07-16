@@ -14,7 +14,7 @@ Project is currently completing basic CRUD actions, including Create, Read (find
 &nbsp;&nbsp; Client Repository: Angular client application in progress <br>
 &nbsp;&nbsp; Live links: No plans yet to deploy/publish the application, yet.
 
-###Technologies Used
+### Technologies Used
 -	Spring Initializr
 -	Java/Mavan/Spring
 -	JPA (repository)
