@@ -8,7 +8,7 @@ public class Project {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int projectId;
+	private long projectId;
 	
 	@Column(name = "project_name")
 	private String projectName;
@@ -40,12 +40,20 @@ public class Project {
 	}
 	
 	// getters and setters
-	//	projectName
-	public int getProjectId() {
+	//	projectId
+	public long getProjectId() {
 		return projectId;
 	}
-	public void setProjectId(int projectId) {
+	public void setProjectId(long projectId) {
 		this.projectId = projectId;
+	}
+	
+	//projectName
+	public String getProjectName() {
+		return projectName;
+	}
+	public void setProjectName(String projectName) {
+		this.projectName = projectName;
 	}
 	
 	//	difficulty
