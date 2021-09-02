@@ -60,7 +60,7 @@ public class ProjectController {
 	public ResponseEntity<Project> createProject(@RequestBody Project project) {
 		try {
 			Project _project = projectRepo
-					.save(new Project(project.getProjectName(), project.getDifficulty(), project.getCategory(), project.getPriority(), project.getCost(), project.isCompleted()));
+					.save(new Project(project.getProjectName(), project.getDescription(), project.getDifficulty(), project.getCategory(), project.getPriority(), project.getCost(), project.isCompleted()));
 			return new ResponseEntity<>(_project, HttpStatus.CREATED);
 		} catch (Exception e) {
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
@@ -75,6 +75,7 @@ public class ProjectController {
 		if (projectData.isPresent()) {
 			Project _project = projectData.get();
 			_project.setProjectName(project.getProjectName());
+			_project.setDescription(project.getDescription());
 			_project.setDifficulty(project.getDifficulty());
 			_project.setCategory(project.getCategory());
 			_project.setPriority(project.getPriority());

@@ -11,7 +11,7 @@ Project is currently completing basic CRUD actions, including Create, Read (find
 
 ### Links
 &nbsp;&nbsp; Backend Repository: [GitHub-HomeWork-Backend](https://github.com/kbini28/homework-backend) <br>
-&nbsp;&nbsp; Client Repository: Angular client application in progress <br>
+&nbsp;&nbsp; Client Repository: [Github-HomeWork-Client](https://github.com/kbini28/homework-client) <br>
 &nbsp;&nbsp; Live links: No plans yet to deploy/publish the application, yet.
 
 ### Technologies Used

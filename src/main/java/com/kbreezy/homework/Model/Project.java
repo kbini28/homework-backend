@@ -13,6 +13,9 @@ public class Project {
 	@Column(name = "project_name")
 	private String projectName;
 	
+	@Column(name = "description")
+	private String description;
+	
 	@Column(name = "difficulty")
 	private String difficulty;
 	
@@ -30,8 +33,9 @@ public class Project {
 	
 	public Project() {}
 	
-	public Project(String projectName, String difficulty, String category, String priority, double cost, boolean completed) {
+	public Project(String projectName, String description, String difficulty, String category, String priority, double cost, boolean completed) {
 		this.projectName = projectName;
+		this.description = description;
 		this.difficulty = difficulty;
 		this.category = category;
 		this.priority = priority;
@@ -48,12 +52,20 @@ public class Project {
 		this.projectId = projectId;
 	}
 	
-	//projectName
+	// projectName
 	public String getProjectName() {
 		return projectName;
 	}
 	public void setProjectName(String projectName) {
 		this.projectName = projectName;
+	}
+	
+	// description
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
 	}
 	
 	//	difficulty
